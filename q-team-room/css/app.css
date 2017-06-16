@@ -132,13 +132,14 @@
   background-color: black;
   color: white;
   border-radius: 2px;
+  padding: 5px 5px;
 }
 
 .toggle {
   padding: 12px 28px;
   background-color: grey;
   cursor: pointer;
-  cursor: hand;
+  cursor: hand;reser
 }
 
 .toggle:hover {
@@ -352,7 +353,7 @@ p {
 
 
 /* media tag */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 640px) {
 	.header {
 		background-image: url("http://localhost/Foundation/Q-apps/files/banner4.svg") !important;
 	}
