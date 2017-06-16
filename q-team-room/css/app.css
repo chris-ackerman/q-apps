@@ -1,0 +1,369 @@
+
+/* GENERAL */
+.wrap {
+	width: 99%;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.top-button {
+  width: 50px;
+  height: 50px;
+  background-color: grey;
+  position: fixed;
+
+}
+
+/* header */
+.header {
+	width: 100%;
+	height: 150px;
+	background-image: url("http://localhost/Foundation/Q-apps/files/banner3.svg");
+	background-size: 100vw;
+	background-color: black;
+}
+
+
+
+#logo {
+	margin: 40px 200px 40px 0px;
+}
+/* NAV-DESKTOP */
+
+
+.nav-desktop {
+	background-color: #222;
+	height: 80px;
+	padding: 0;
+}
+
+.menu-text {
+	color: white;
+	background-color: #222;
+	line-height: 75px;
+	padding: 0;
+}
+
+.top-bar ul.menu-desktop {
+	line-height: 80px;
+}
+
+.nav-desktop a {
+	color: red;
+	display: inline-block;
+
+}
+.menu > li > a {
+	display: inline-block;
+	background-color: black;
+}
+
+
+
+.top-bar {
+	background-color: black;
+}
+
+
+.foundation-5-top-bar {
+  background: black;
+  color: #fefefe;
+}
+
+.foundation-5-top-bar .menu {
+  background: #333;
+}
+
+.foundation-5-top-bar .menu a {
+  color: #fefefe;
+  background-color: black;
+}
+
+.foundation-5-top-bar .is-dropdown-submenu {
+  border: 0;
+  background-color: black;
+}
+
+.foundation-5-top-bar .is-dropdown-submenu-item.opens-right a::after {
+  border-color: transparent transparent transparent #fefefe;
+}
+
+.foundation-5-top-bar .js-drilldown-back > a::before {
+  border-color: transparent #fefefe transparent transparent;
+  background-color: black;
+}
+
+.foundation-5-top-bar .is-drilldown-submenu-parent > a::after {
+  border-color: transparent transparent transparent #fefefe;
+  background-color: black;
+}
+
+.foundation-5-top-bar .dropdown.menu.medium-horizontal > li.is-dropdown-submenu-parent > a::after {
+  border-color: #fefefe transparent transparent;
+  background-color: black;
+}
+
+.menu.vertical > li {
+	background-color: black;
+}
+
+.is-drilldown-submenu-parent > a::after {
+	right: .25rem;
+}
+
+
+
+/* HERO */
+.hero {
+	background-color: grey;
+	padding: 80px 0px;
+	height: 400px;
+}
+
+/* MAIN SECTION */
+.main {
+	padding: 80px 0px;
+}
+
+/* td settings */
+.reserve {
+  cursor: pointer;
+  cursor: hand;
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+}
+
+.toggle {
+  padding: 12px 28px;
+  background-color: grey;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.toggle:hover {
+  background-color: black;
+  color: white;
+}
+
+#second-floor {
+  display: block;
+}
+
+#third-floor {
+  display: none;
+}
+
+/* this is for my side menu */
+.menu {
+    width: 300px;
+/*    height: 400px;*/
+    margin-left: 0;
+}
+
+
+button.accordion {
+    cursor: pointer;
+    margin: 5px 10px auto;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 18px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, 
+button.accordion:hover {
+    background-color: #63c4af;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0;
+    display: none;
+
+}
+
+.wrap {
+    width: 99%;
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+button.students,
+button.directories,
+button.calendars,
+button.academics,
+button.tech {
+    background-color: black;
+    color: white;
+    border-left: 10px solid #63c4af;
+}
+
+
+button.sub {
+    cursor: pointer;
+    width: 90%;
+    margin: .5% 5% auto;
+    height: 6vh;
+    text-align: center;
+    border: 0;
+    border-left: 10px solid #63c4af;
+    background-color: black;
+    color: white;
+    outline: none;
+    transition: 0.4s;
+    font-size: 16px;
+}
+
+button.sub:hover {
+    background-color: #63c4af;
+}
+
+/* ------------------------ */
+
+
+/* FOOTER */
+
+footer {
+	background-color: #222;
+	padding: 10px 0px;
+}
+
+footer a {
+	display: block;
+}
+
+/* Zechao's footer css */
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 45px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background:  #3B5998;
+  color: #282828;
+  margin-right:5px;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: #282828;
+  margin-right:5px}
+
+.fa-youtube {
+  background: #bb0000;
+  color: #282828;
+  margin-right:5px
+}
+
+.fa-instagram {
+  background: #125688;
+  color: #282828;
+  margin-right:30px
+}
+.social_incon{
+  float: right; 
+  display:inline-block;
+}
+
+@media screen and (max-width: 780px) { 
+  * {
+    text-align:center; 
+  }
+  .social_incon {
+    float:none!important;
+  }
+  .list li {
+    float:none!important;
+  }
+  .fa-instagram {
+    margin-right: 5px}
+
+  .fa {
+    margin-top:30px;
+  }
+  #newsforlist, 
+  #calendarforlist, 
+  #Contactusforlist {
+    margin-top:15px!important; 
+    margin-bottom:0px!important;
+  }
+  p { 
+    margin-top:0px!important;
+  }
+}
+
+#newsforlist, 
+#calendarforlist, 
+#Contactusforlist {
+  text-decoration: none; 
+  float:right; 
+  display:inline-block;
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 1.25em;
+  list-style-position: outside;
+  font-family: inherit;margin-right: 30px;
+  margin-top:50px;
+  color:#908f8f;
+}
+
+a {
+  color:#908f8f;
+}
+
+p {
+  color:#908f8f;
+  text-align:center;
+}
+
+@media screen and (min-width:780px){
+  p#zechao{
+    margin-right: 500px!important;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color:#282828;
+}
+
+.title {
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+
+/* media tag */
+@media only screen and (max-width: 700px) {
+	.header {
+		background-image: url("http://localhost/Foundation/Q-apps/files/banner4.svg") !important;
+	}
+	#logo {
+		width: 58vw;
+	}
+	button.accordion {
+		width: 85vw;
+	}
+
+	button.sub {
+		width: 80vw;
+	}
+}
