@@ -1,19 +1,19 @@
 $(document).foundation()
 
 $(document).ready( function () {
-  $('#example').dataTable( {
+  $('#example1, #example2').dataTable( {
     "bSort": false
   } );
 } );
 
 function showSecondFloor() {
-    $("#third-floor").velocity("fadeOut", {duration: 500});
-    $("#second-floor").velocity("fadeIn", {duration: 500});
+    $("#third").velocity("fadeOut", {duration: 500});
+    $("#second").velocity("fadeIn", {duration: 500});
 }
 
 function showThirdFloor() {
-    $("#second-floor").velocity("fadeOut", {duration: 500});
-    $("#third-floor").velocity("fadeIn", {duration: 500});
+    $("#second").velocity("fadeOut", {duration: 500});
+    $("#third").velocity("fadeIn", {duration: 500});
 }
 
 var acc = document.getElementsByClassName("accordion");
