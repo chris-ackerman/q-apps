@@ -1,5 +1,11 @@
 $(document).foundation()
 
+$(document).ready( function () {
+  $('#example').dataTable( {
+    "bSort": false
+  } );
+} );
+
 function showSecondFloor() {
     $("#third-floor").velocity("fadeOut", {duration: 500});
     $("#second-floor").velocity("fadeIn", {duration: 500});
