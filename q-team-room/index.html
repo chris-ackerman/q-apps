@@ -79,12 +79,12 @@
       </div>
     </div>
   <!-- MAIN SECTION -->
- 
+  <!-- <div class="small-12 medium-4 column" style="position: fixed; margin-top: -75px"> -->
   
   <section class="main">
     <div class="wrap row">
-      <div class="small-12 medium-4 column" style="position: fixed; margin-top: -75px">
-        <div class="menu">
+      <div class="small-12 medium-4 column">
+        <div class="menu" id="sticker">
             <button class="accordion students">One</button>
               <div class="panel">
                 <ul>
@@ -127,9 +127,10 @@
       </div>
       <div class="small-12 medium-8 column">
       <!-- this is for my table -->
+      <!-- <div class="twelve columns" style="margin-top: -75px"> -->
 
       <div class="row" id="second-floor">
-      <div class="twelve columns" style="margin-top: -75px">
+      <div class="twelve columns">
         
       <button class="toggle" onclick="showSecondFloor()">Second Floor</button>
       <button class="toggle" onclick="showThirdFloor()">Third Floor</button>
@@ -531,10 +532,10 @@
         <br>
         <br>
         <br>
-
+<!-- <div class="twelve columns" style="margin-top: -75px;"> -->
 
     <div class="row" id="third-floor">
-      <div class="twelve columns" style="margin-top: -75px;">
+      <div class="twelve columns">
         
       <button class="toggle" onclick="showSecondFloor()">Second Floor</button>
       <button class="toggle" onclick="showThirdFloor()">Third Floor</button>
@@ -902,6 +903,12 @@
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/velocity.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#sticker").sticky({topSpacing:0});
+      });
+    </script>
     <script src="js/app.js"></script>
   </body>
 </html>
