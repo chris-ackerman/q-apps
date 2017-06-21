@@ -122,7 +122,7 @@
   background-color: grey;
   cursor: pointer;
   cursor: hand;
-  float: right;
+  float: left;
 }
 
 .toggle:hover {
@@ -139,7 +139,7 @@
 }
 /* this is for my side menu */
 .menu {
-    width: 300px;
+    width: 200px;
     margin-left: 0;
     background-color: white;
 }

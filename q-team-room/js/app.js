@@ -8,11 +8,13 @@ $(document).ready( function () {
 
 function showSecondFloor() {
     $("#third").velocity("fadeOut", {duration: 500});
+    document.getElementById("floor-header").innerHTML = "Second Floor";
     $("#second").velocity("fadeIn", {duration: 500});
 }
 
 function showThirdFloor() {
     $("#second").velocity("fadeOut", {duration: 500});
+    document.getElementById("floor-header").innerHTML = "Third Floor";
     $("#third").velocity("fadeIn", {duration: 500});
 }
 
