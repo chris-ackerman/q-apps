@@ -5,9 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questrom Apps</title>
-    <!-- stylesheets -->
+    <!-- STYLESHEETS -->
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/responsive-tables.css">
@@ -114,15 +113,11 @@
       <h1 id="floor-header" style="z-index: 500; text-align: center;"> Second Floor </h1>
       <button class="toggle" onclick="showSecondFloor()" style="margin-left: 1rem">Second Floor</button> 
       <button class="toggle" onclick="showThirdFloor()">Third Floor</button>
-      <div class="small-12 medium-8 column" style="z-index: 500; text-align: center;">
+      <div class="small-12 medium-8 column" style="text-align: center;">
       <!-- this is for my table -->
-      
       <div id="second">
         <table id="example1" class="display" cellspacing="0" width="100%">
-          <!-- <button class="toggle" onclick="showThirdFloor()">Third Floor</button> -->
-          <!-- <button class="toggle" onclick="showSecondFloor()">Second Floor</button> -->
           <thead>
-          <!-- <h1 id="second-floor-header" style="z-index: 500;"> Second Floor </h1> -->
               <tr>
                   <th class="none">Time</th>
                   <th>207</th>
@@ -893,7 +888,10 @@
   <script src="js/jquery.sticky.js"></script>
   <script>
     $(document).ready(function(){
-      $("#sticker").sticky({topSpacing:0});
+        if (window.innerWidth > 640) {
+          $("#sticker").sticky({topSpacing:0});
+          console.log("this IF works");
+        }
     });
   </script>
   <script src="js/app.js"></script>
